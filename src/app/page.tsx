@@ -1,15 +1,19 @@
-import { SuperpowerForm } from "./ui/superpower-form";
-import { ModeToggle } from "./ui/theme-toggle";
+import { SelectSuperpowerForm } from "@/components/ui/select-superpower-form";
+import { ModeToggle } from "../components/ui/theme-toggle";
 
 export default function Home() {
-
-
   return (
     <main>
-      <div>
-        <ModeToggle />
-        <SuperpowerForm />
+      <div className="w-screen h-screen">
+        <div className="fixed w-screen">
+          <ModeToggle />
+        </div>
+
+
+        <SelectSuperpowerForm />
+
       </div>
     </main>
   );
 }
+
