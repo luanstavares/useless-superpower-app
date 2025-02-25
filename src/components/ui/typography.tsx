@@ -7,7 +7,7 @@ interface TypographyProps {
 
 export function TypographyH1({ children, className = "" }: TypographyProps) {
     return (
-        <h1 className={`scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ${className}`}>
+        <h1 className={`scroll-m-20 text-4xl font-extrabold lg:text-5xl  ${className}`}>
             {children}
         </h1>
     );
@@ -37,11 +37,20 @@ export function TypographyH4({ children, className = "" }: TypographyProps) {
     );
 }
 
+
 export function TypographyP({ children, className = "" }: TypographyProps) {
     return (
         <p className={`leading-7 not-first:mt-6 ${className}`}>
             {children}
         </p>
+    );
+}
+
+export function TypographySpan({ children, className = "" }: TypographyProps) {
+    return (
+        <span className={`leading-7 ${className}`}>
+            {children}
+        </span>
     );
 }
 

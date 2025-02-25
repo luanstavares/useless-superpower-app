@@ -1,6 +1,7 @@
 import { SelectSuperpowerForm } from "@/components/ui/select-superpower-form";
 import { ModeToggle } from "../components/ui/theme-toggle";
 
+
 export default function Home() {
   return (
     <main>
@@ -13,7 +14,7 @@ export default function Home() {
         <SelectSuperpowerForm />
 
       </div>
-    </main>
+    </main >
   );
 }
 
