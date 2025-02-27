@@ -20,7 +20,7 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover"
 
-import { TypographyH4, TypographyList } from "@/components/ui/typography";
+import { TypographyH4, TypographyList, } from "@/components/ui/typography";
 import { Superpower } from '@/app/types/superpower'
 
 interface SelectSuperPowerProps {
@@ -30,7 +30,6 @@ interface SelectSuperPowerProps {
 
 export function SelectSuperPower({ superPowerValue, setSuperpowerValue }: SelectSuperPowerProps) {
     const [open, setOpen] = useState(false)
-    //const [superPower, setSuperpower] = useState<string>("")
     const [superpowers, setSuperpowers] = useState<Superpower[]>([])
 
     useEffect(() => {
@@ -49,7 +48,7 @@ export function SelectSuperPower({ superPowerValue, setSuperpowerValue }: Select
                     variant="outline"
                     role="combobox"
                     aria-expanded={open}
-                    className="w-[500px] justify-between items-center"
+                    className="w-2xs sm:w-md md:w-xl justify-between items-center"
                 >
                     {superPowerValue.name
                         ? superpowers.find((superpower) => superpower.name === superPowerValue.name)?.name
@@ -57,7 +56,7 @@ export function SelectSuperPower({ superPowerValue, setSuperpowerValue }: Select
                     <ChevronsUpDown className="opacity-50" />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-full p-0">
+            <PopoverContent className="w-3xs sm:w-md md:w-full p-0">
                 <Command>
                     <CommandInput placeholder="Search superpower..." className="h-9" />
                     <CommandList className="max-h-80 overflow-auto">

@@ -7,7 +7,7 @@ interface TypographyProps {
 
 export function TypographyH1({ children, className = "" }: TypographyProps) {
     return (
-        <h1 className={`scroll-m-20 text-4xl font-extrabold lg:text-5xl  ${className}`}>
+        <h1 className={`scroll-m-20 font-extrabold lg:text-5xl md:text-5xl sm:text-4xl text-4xl ${className}`}>
             {children}
         </h1>
     );
@@ -15,7 +15,7 @@ export function TypographyH1({ children, className = "" }: TypographyProps) {
 
 export function TypographyH2({ children, className = "" }: TypographyProps) {
     return (
-        <h2 className={`scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 ${className}`}>
+        <h2 className={`scroll-m-20 border-b pb-2 text-3xl sm:text-3xl font-semibold tracking-tight first:mt-0 ${className}`}>
             {children}
         </h2>
     );
@@ -23,7 +23,7 @@ export function TypographyH2({ children, className = "" }: TypographyProps) {
 
 export function TypographyH3({ children, className = "" }: TypographyProps) {
     return (
-        <h3 className={`scroll-m-20 text-2xl font-semibold tracking-tight ${className}`}>
+        <h3 className={`scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight ${className}`}>
             {children}
         </h3>
     );
@@ -31,7 +31,7 @@ export function TypographyH3({ children, className = "" }: TypographyProps) {
 
 export function TypographyH4({ children, className = "" }: TypographyProps) {
     return (
-        <h4 className={`scroll-m-20 text-xl font-semibold tracking-tight ${className}`}>
+        <h4 className={`scroll-m-20 text-md md:text-xl font-semibold tracking-tight ${className}`}>
             {children}
         </h4>
     );
